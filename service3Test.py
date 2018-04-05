@@ -22,8 +22,6 @@ def test_service1_index():
     #headerstring = {"Content-Type": "application/json"}
     resp = requests.get(url, verify=False)
     respText = resp.text 
-    print('xxxx', flowDetails)
-
 
     assert "Hello" in respText
     return None
