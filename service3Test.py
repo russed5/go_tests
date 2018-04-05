@@ -21,10 +21,9 @@ def test_service1_index():
     url = 'http://' + ipaddress + portnumber + apipath
     #headerstring = {"Content-Type": "application/json"}
     resp = requests.get(url, verify=False)
-    flowDetails = resp.content 
-    #output = json.loads(flowDetails)
+    respText = resp.text 
     print('xxxx', flowDetails)
 
 
-    assert "Hello" in flowDetails
+    assert "Hello" in respText
     return None
