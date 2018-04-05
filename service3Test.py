@@ -15,8 +15,8 @@ import requests.exceptions
 
 
 def test_service1_index():
-    portnumber = ":8080"
-    ipaddress = "10.0.2.15"
+    portnumber = ":30002"
+    ipaddress = "192.168.99.100"
     apipath = "/"
     url = 'http://' + ipaddress + portnumber + apipath
     #headerstring = {"Content-Type": "application/json"}
